@@ -1,0 +1,10 @@
+name          'mzachh-zfsdir'
+version       '0.1.0'
+source        'https://github.com/mzachh/zfsdir'
+author        'mzachh'
+license       'Apache 2.0'
+summary       'Extended management of ZFS filesystems.'
+description   ''
+project_page  'https://github.com/mzachh/zfsdir'
+
+dependency 'puppetlabs/stdlib'

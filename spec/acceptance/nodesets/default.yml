@@ -1,0 +1,11 @@
+HOSTS:
+  solaris11:
+    roles:
+      - agent
+    platform: solaris-11-x64
+    box : solaris11
+    box_url :
+    hypervisor : vagrant
+CONFIG:
+  log_level: verbose
+  type: foss

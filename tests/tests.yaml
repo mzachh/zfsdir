@@ -1,0 +1,23 @@
+---
+zfsdirs:
+  rpool/mysqlbin:
+    ensure: 'present'
+    zfs:
+      mountpoint: '/mysqlbin'
+      compression: 'on'
+    file:
+      owner: 'mysql'
+      group: 'bin'
+  rpool/mysqldata:
+    zfs:
+      mountpoint: '/mysqldata'
+      recordsize: '16K'
+      logbias: 'throughput'
+    file:
+      owner: 'mysql'
+      group: 'bin'
+  rpool/dumpdir:
+    zfs:
+      mountpoint: '/dumpdir'
+    file:
+      mode: '0777'

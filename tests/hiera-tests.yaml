@@ -1,0 +1,8 @@
+---
+:backends:
+  - yaml
+:logger: console
+:yaml:
+  :datadir: "%{settings::confdir}/modules/zfsdir/tests/"
+:hierarchy:
+  - "tests"
